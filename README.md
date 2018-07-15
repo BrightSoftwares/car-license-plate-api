@@ -1,3 +1,5 @@
+[![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)](https://www.python.org/downloads/release/python-370/)
+
 # Django Rest Car Plates REST Api
 This is a sample web application using Django Rest Framework.
 
