@@ -18,8 +18,9 @@ class Owner(models.Model):
 class Plate(models.Model):
     license_number_format = RegexValidator(r'^[a-zA-Z]{3}[0-9]{3}$', 'Wrong format. Please use ABC123 format.')
 
-    owner = models.ForeignKey(Owner, on_delete=models.CASCADE, related_name='plates')
-    license_number = models.CharField(max_length=6, unique=True, validators=[license_number_format])
+    owner = models.ForeignKey(Owner, on_delete=models.CASCADE, related_name='plates', blank=False, null=False)
+    license_number = models.CharField(max_length=6, unique=True, blank=False, null=False,
+                                      validators=[license_number_format])
 
     def __str__(self):
         return self.license_number
