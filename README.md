@@ -38,8 +38,7 @@ python manage.py test plates
 Application has admin panel implemented.
 Accessed via browser http://localhost:8000/admin
 
-**Username:** *admin*
-
+**Username:** *admin*  
 **Password:** *Password01*
 
 ## Endpoints
@@ -66,6 +65,6 @@ Accessed via browser http://localhost:8000/admin
 
 ## TODO
 
-Application must have more tests than now, of course.
-Authentication and authorization is not implemented.
+Application must have more tests than now, of course.  
+Authentication and authorization is not implemented.  
 Frontend part (forms) are django default generated.
