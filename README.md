@@ -41,7 +41,7 @@ Application has admin panel implemented.
 Accessed via browser http://localhost:8000/admin
 
 **Username:** *admin*  
-**Password:** *Password01*
+**Password:** *Password123*
 
 ## Endpoints
 
