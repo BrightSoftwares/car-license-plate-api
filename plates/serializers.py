@@ -9,7 +9,7 @@ class PlateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Plate
-        fields = ('url', 'id', 'license_number', 'owner_name', 'owner_surname', 'owner')
+        fields = ('url', 'id', 'license_number', 'owner_name', 'owner_surname', 'owner', 'detector', 'accuracy')
 
 
 class OwnerSerializer(serializers.ModelSerializer):

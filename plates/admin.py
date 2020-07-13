@@ -4,7 +4,7 @@ from .models import Plate, Owner
 
 
 class PlateAdmin(admin.ModelAdmin):
-    list_display = ('id', 'license_number', 'owner')
+    list_display = ('id', 'license_number', 'accuracy', 'owner', 'detector',)
     search_fields = ['license_number']
 
 
