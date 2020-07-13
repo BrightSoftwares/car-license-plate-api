@@ -5,9 +5,9 @@ services:
 
 before_install:
   - docker build -t fullbright/car-license-plate-api .
-  - docker run -d -p 127.0.0.1:80:4567 fullbright/car-license-plate-api /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
+  - docker run -d -p 127.0.0.1:80:8000 fullbright/car-license-plate-api /bin/sh -c "cd /code; python manage.py runserver 0.0.0.0:8000;"
   - docker ps -a
-  - docker run fullbright/car-license-plate-api /bin/sh -c "cd /root/sinatra; bundle exec rake test"
+  - docker run fullbright/car-license-plate-api /bin/sh -c "cd /code; python manage.py runserver 0.0.0.0:8000"
 
 script:
-  - bundle exec rake test
+  - curl 127.0.0.1:80
