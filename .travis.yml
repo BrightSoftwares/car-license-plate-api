@@ -7,7 +7,7 @@ before_install:
   - docker build -t fullbright/car-license-plate-api .
   - docker run -d -p 127.0.0.1:80:8000 fullbright/car-license-plate-api /bin/sh -c "cd /code; python manage.py runserver 0.0.0.0:8000;"
   - docker ps -a
-  - docker run fullbright/car-license-plate-api /bin/sh -c "cd /code; python manage.py runserver 0.0.0.0:8000"
+  - docker run fullbright/car-license-plate-api /bin/sh -c "cd /code; python manage.py test"
 
 script:
   - curl 127.0.0.1:80
